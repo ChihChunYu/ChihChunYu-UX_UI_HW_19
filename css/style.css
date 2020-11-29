@@ -1,0 +1,377 @@
+
+.block {
+    display:block;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;    
+}
+
+
+h1 {
+    font-family: Montserrat, Arial;;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    font-weight: 450;
+    word-break: break-word;
+}
+
+
+p {
+    font-family: Montserrat, Arial;
+    word-break: break-word;
+}
+
+.pageTitle {
+    display: none;
+    width:76%;
+    justify-content:center;
+    align-items:center; 
+}
+
+.title {
+    
+    font-weight: 600;
+    font-size: 36px;
+    padding: 0% 4% 0% 4%;
+    line-height: 100%;    
+    text-align: center;     
+}
+
+
+.navHighlight {
+    width:45%;
+    min-height: 10px;
+}
+
+
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:         
+        "mySummary heroImg"        
+    ;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-column-gap: 40px;
+    background-color: white;    
+}
+
+.heroImg {
+    grid-area:heroImg;    
+    padding:10% 0% 0% 0%;
+    display:block;
+    justify-content: left;
+    align-items: center;
+}
+.mySummary{
+    grid-area:mySummary;
+    display:flex;
+    width:100%;
+    padding:4% 0% 4% 0%;
+    justify-content: end;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.alignRight {
+    width:100%;
+    padding: 4% 0% 0% 0%; 
+    display:flex;
+    justify-content: flex-end;
+}
+
+.alignLeft {
+    width:100%;
+    padding: 4% 0% 0% 0%; 
+    display:flex;
+    justify-content: flex-start;
+}
+
+.alignBottom {
+    width:100%;     
+    display:flex;
+    align-items: flex-end;
+}
+
+.align_center {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height:94%;
+    padding: 3% 5% 3% 5%;
+    border-radius:6px;
+    color:white;
+    font-family: Montserrat, Arial;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    border:0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));   
+}
+
+
+.regular {
+    font-family: Montserrat, Arial;
+    font-size: 18px;
+    line-height: 200%;
+}
+
+.bold {
+    font-family: Montserrat, Arial;
+    font-size: 18px;
+    line-height: 100%; 
+    font-weight: 700;
+}
+
+
+footer {
+    width:80%;
+    padding:5% 10% 5% 10%;    
+    margin:20px 0px 0px 0px;    
+}
+
+.footer_text {
+    display:flex;
+    width:80%;    
+    justify-content: center;    
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.footer_links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:         
+        "toResume toTop toLinkedin"; 
+    padding: 4% 0% 0% 0%;
+}
+
+.link {
+    color:#0645AD;
+    text-decoration: underline;
+}
+
+.toResume {
+    grid-area: toResume;
+    display: inline;
+    text-align: center;
+}
+
+.toTop {
+    grid-area: toTop;
+    text-align: center;
+}
+
+
+.toLinkedin {
+    grid-area: toLinkedin;
+    text-align: center;
+}
+
+
+section {
+    width:80%;
+    padding:4% 10% 4% 10%;    
+    margin:20px 0px 0px 0px;
+}
+
+.skills {
+    display: flex;    
+    justify-content: space-between;
+    align-items: start;
+}
+
+.skillContent {
+    width:33%;
+    border: 0%;    
+    text-align: center;
+    justify-content: center;    
+}
+
+.sectionHeader {    
+    display: flex;
+    justify-content: center;
+    padding: 0% 0% 4% 0%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));    
+}
+
+
+.sectionName {    
+    color:white;
+    border-radius: 50px;
+    width:40%; 
+    height:100%;    
+    text-align: center;
+    align-items: center;    
+}
+
+.skills_detail {    
+    width:100%;
+    border: 0% 2% 0% 2%;
+    text-align: center;
+    justify-self: center;
+}
+
+
+.skillImg {    
+    width:90%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius:10px;
+}
+
+
+.projectCard {
+    width:88%;
+    border-radius: 20px;
+    padding: 4% 6% 4% 6%;
+    margin: 0px 0px 20px 0px; 
+}
+
+.project1 {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1.5fr;
+    grid-template-areas:         
+        "projectName projectName"        
+        "projectSummary projectImg"
+        "projectNotes projectButton"
+        ;
+    grid-column-gap: 40px;
+}
+
+.projectName {
+    grid-area: projectName;
+}
+
+.projectSummary{
+    grid-area: projectSummary;    
+}
+
+img {
+    max-width:100%;   
+}
+
+.projectImg {        
+    align-self: center;
+    grid-area: projectImg;
+}
+
+.projectNotes {
+    grid-area: projectNotes;    
+}
+
+.projectButton {
+    grid-area: projectButton;
+    color:white;
+    border:0px;
+}
+
+
+.project2 {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1.5fr;
+    grid-template-areas:         
+        "projectName projectName"        
+        "projectImg projectSummary"
+        "projectButton projectNotes"
+        ;
+    grid-column-gap: 40px;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .summary {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas:         
+            "mySummary"
+            "heroImg"        
+        ;
+    }
+
+    .mySummary{
+        display:flex;
+        width:100%;
+        padding:4% 0% 4% 0%;
+        justify-content: end;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+   
+    .skills {
+        display: flex;    
+        justify-content: space-between;
+        align-items: start;
+        flex-direction:column;
+    }
+
+    .project1 {    
+        display: grid;
+        grid-template-columns:none;
+        grid-template-rows: 0.5fr 2fr 1fr 0.5fr 0.5fr;
+        grid-template-areas:         
+            "projectName" 
+            "projectSummary"
+            "projectImg"
+            "projectNotes"
+            "projectButton"
+            ;
+    }
+
+    .project2 {    
+        display: grid;
+        grid-template-columns:none;
+        grid-template-rows: 0.5fr 2fr 1fr 0.5fr 0.5fr;;
+        grid-template-areas:         
+            "projectName" 
+            "projectSummary"
+            "projectImg"
+            "projectNotes"
+            "projectButton"
+            ;
+    }
+
+    .projectImg {
+        align-self: center;
+        grid-area: projectImg;
+    }
+
+   
+    .sectionName {    
+        color:white;
+        border-radius: 50px;
+        width:80%; 
+        height:100%;    
+        text-align: center;
+        align-items: center;    
+    }
+
+    .skillContent {
+        width:100%;
+        border: 0%;    
+        text-align: center;
+        justify-content: center;    
+    }
+    
+    
+
+} 
