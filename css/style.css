@@ -49,6 +49,7 @@ p {
 .navHighlight {
     width:45%;
     min-height: 10px;
+    background-color:#3BA4C5;
 }
 
 
@@ -62,6 +63,11 @@ p {
     grid-column-gap: 40px;
     background-color: white;    
 }
+
+.myResume {
+    background-color:#3BA4C5;
+}
+
 
 .heroImg {
     grid-area:heroImg;    
@@ -108,7 +114,6 @@ p {
 }
 
 button {
-    height:94%;
     padding: 3% 5% 3% 5%;
     border-radius:6px;
     color:white;
@@ -119,7 +124,7 @@ button {
     align-items: center;
     text-align: center;
     border:0px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));   
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 
@@ -140,8 +145,14 @@ button {
 footer {
     width:80%;
     padding:5% 10% 5% 10%;    
-    margin:20px 0px 0px 0px;    
+    margin:20px 0px 0px 0px;
+    background-color:#FACCC9;    
 }
+
+.sectionNameFooter {
+    background-color:#EE6B62;
+}
+
 
 .footer_text {
     display:flex;
@@ -189,6 +200,14 @@ section {
     margin:20px 0px 0px 0px;
 }
 
+.sectionSkills {
+    background-color:#CFE9F2;;
+}
+
+.sectionWorks {
+    background-color: #FCE7B1;
+}
+
 .skills {
     display: flex;    
     justify-content: space-between;
@@ -217,6 +236,14 @@ section {
     height:100%;    
     text-align: center;
     align-items: center;    
+}
+
+.sectionNameSkills {
+    background-color:#3BA4C5;
+}
+
+.sectionNameWorks {
+    background-color: #F8CF63;
 }
 
 .skills_detail {    
@@ -251,6 +278,8 @@ section {
         "projectNotes projectButton"
         ;
     grid-column-gap: 40px;
+    background-color: #A4D1C0;
+
 }
 
 .projectName {
@@ -274,12 +303,35 @@ img {
     grid-area: projectNotes;    
 }
 
-.projectButton {
+.projectButton1 {
     grid-area: projectButton;
     color:white;
     border:0px;
+    width:100%;     
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 4% 0% 0% 0%;
 }
 
+.projectButton2 {
+    grid-area: projectButton;
+    color:white;
+    border:0px;
+    width:100%;     
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 4% 0% 0% 0%;
+}
+
+.buttonP1 {
+    background-color:#49A380;
+}
+
+.buttonP2 {
+    background-color:#7872B8;
+}
 
 .project2 {    
     display: grid;
@@ -291,8 +343,10 @@ img {
         "projectButton projectNotes"
         ;
     grid-column-gap: 40px;
-
+    background-color: #BCB9DC;
 }
+
+
 
 @media only screen and (max-width: 600px) {
 
