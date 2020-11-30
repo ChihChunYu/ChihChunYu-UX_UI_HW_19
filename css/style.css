@@ -7,12 +7,27 @@
     display: inline-block;
 }
 
+
+nav {
+    width:100%;
+    top:0;
+    position: fixed;
+    z-index: 1000;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
-    background-color: white;    
+    background-color: white;        
 }
 
+.about {
+
+}
+
+.works {
+
+}
 
 h1 {
     font-family: Montserrat, Arial;;
@@ -36,8 +51,7 @@ p {
     align-items:center; 
 }
 
-.title {
-    
+.title {    
     font-weight: 600;
     font-size: 36px;
     padding: 0% 4% 0% 4%;
@@ -45,8 +59,14 @@ p {
     text-align: center;     
 }
 
-
 .navHighlight {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.highlight {
     width:45%;
     min-height: 10px;
     background-color:#3BA4C5;
@@ -54,6 +74,8 @@ p {
 
 
 .summary {
+    position: relative;
+    top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:         
@@ -86,7 +108,7 @@ p {
     flex-direction: column;
 }
 
-.alignRight {
+.resumeButton {
     width:100%;
     padding: 4% 0% 0% 0%; 
     display:flex;
@@ -115,6 +137,7 @@ p {
 
 button {
     padding: 3% 5% 3% 5%;
+    display:inline-block;
     border-radius:6px;
     color:white;
     font-family: Montserrat, Arial;
@@ -232,7 +255,7 @@ section {
 .sectionName {    
     color:white;
     border-radius: 50px;
-    width:40%; 
+    width:60%; 
     height:100%;    
     text-align: center;
     align-items: center;    
@@ -305,27 +328,24 @@ img {
 
 .projectButton1 {
     grid-area: projectButton;
-    color:white;
-    border:0px;
-    width:100%;     
+    padding: 0% 0% 4% 0%;
     display:flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 4% 0% 0% 0%;
-}
+    width:100%;
+    }
 
 .projectButton2 {
     grid-area: projectButton;
-    color:white;
-    border:0px;
-    width:100%;     
     display:flex;
     align-items: flex-end;
     justify-content: flex-start;
-    padding: 4% 0% 0% 0%;
+    padding: 0% 0% 4% 0%;
 }
 
 .buttonP1 {
+    white-space: nowrap;
+    display: block;
     background-color:#49A380;
 }
 
