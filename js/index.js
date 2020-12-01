@@ -31,20 +31,52 @@ $(".buttonP2").hover(
 window.onscroll = function() {navScroll()};
 
 function navScroll () {
-    if (document.documentElement.scrollTop > 1500){
-        $(".navHighlight").css("justify-content", "flex-end");
+    if (document.documentElement.scrollTop > 3500){
+        $(".navContact").css("border-style", "solid");
+        $(".navWorks").css("border-style", "none");
+        $(".navSkills").css("border-style", "none");
+        $(".navSummary").css("border-style", "none");
     }
+
+    else if (document.documentElement.scrollTop > 1560){
+        $(".navWorks").css("border-style", "solid");
+        $(".navContact").css("border-style", "none");
+        $(".navSkills").css("border-style", "none");
+        $(".navSummary").css("border-style", "none");
+    }
+
+    else if (document.documentElement.scrollTop > 740){
+        $(".navSkills").css("border-style", "solid");
+        $(".navWorks").css("border-style", "none");
+        $(".navContact").css("border-style", "none");
+        $(".navSummary").css("border-style", "none");
+    }
+
     else {
-        $(".navHighlight").css("justify-content", "flex-start");
+        $(".navSummary").css("border-style", "solid");
+        $(".navWorks").css("border-style", "none");
+        $(".navSkills").css("border-style", "none");
+        $(".navContact").css("border-style", "none");
     }
 }
 
 
-$(".about").on("click", function(){
+$(".navSummary").on("click", function(){
     $(document.documentElement).animate({scrollTop:0}, "300");
 });
 
+$(".toTop").on("click", function(){
+    $(document.documentElement).animate({scrollTop:0}, "300");
+});
 
-$(".works").on("click", function(){
-    $(document.documentElement).animate({scrollTop:1501}, "300");
+$(".navSkills").on("click", function(){
+    $(document.documentElement).animate({scrollTop:741}, "300");
+});
+
+$(".navWorks").on("click", function(){
+    $(document.documentElement).animate({scrollTop:1561}, "300");
+});
+
+$(".navContact").on("click", function(){
+    $(document.documentElement).animate({scrollTop:3501}, "300");
 });

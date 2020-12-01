@@ -70,16 +70,32 @@ p {
     text-align: center;    
 }
 
-.navSummary {
+.navTextBox {
     display: flex;
     justify-content: center;
     align-items: center;
     width:25%;
     height:90%;
-    border-style: solid;
     border-width: 0 0 0.6vw 0;
     border-color: #3BA4C5; 
 }
+
+.navSummary {
+    border-style: solid;
+}
+
+.navSkills {
+    border-style: none;
+}
+
+.navWorks {
+    border-style: none;
+}
+
+.navContact {
+    border-style: none;
+}
+
 
 .title {    
     font-weight: 600;
