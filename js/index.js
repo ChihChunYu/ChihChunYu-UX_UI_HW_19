@@ -15,7 +15,7 @@ $(".buttonP1").hover(
         $(this).css("background-color", "#CFE9F2");
         $(this).css("color", "black")},
     function(){
-        $(this).css("background-color", "#49A380");
+        $(this).css("background-color", "#3BA4C5");
         $(this).css("color", "white")}
 )
 
@@ -24,28 +24,28 @@ $(".buttonP2").hover(
         $(this).css("background-color", "#CFE9F2");
         $(this).css("color", "black")},
     function(){
-        $(this).css("background-color", "#7872B8");
+        $(this).css("background-color", "#3BA4C5");
         $(this).css("color", "white")}
 )
 
 window.onscroll = function() {navScroll()};
 
 function navScroll () {
-    if (document.documentElement.scrollTop > 3500){
+    if (document.documentElement.scrollTop > $(".sectionNameFooter").offset().top -300){
         $(".navContact").css("border-style", "solid");
         $(".navWorks").css("border-style", "none");
         $(".navSkills").css("border-style", "none");
         $(".navSummary").css("border-style", "none");
     }
 
-    else if (document.documentElement.scrollTop > 1560){
+    else if (document.documentElement.scrollTop > $(".sectionNameWorks").offset().top -61){
         $(".navWorks").css("border-style", "solid");
         $(".navContact").css("border-style", "none");
         $(".navSkills").css("border-style", "none");
         $(".navSummary").css("border-style", "none");
     }
 
-    else if (document.documentElement.scrollTop > 740){
+    else if (document.documentElement.scrollTop > $(".sectionNameSkills").offset().top -51){
         $(".navSkills").css("border-style", "solid");
         $(".navWorks").css("border-style", "none");
         $(".navContact").css("border-style", "none");
@@ -61,22 +61,24 @@ function navScroll () {
 }
 
 
-$(".navSummary").on("click", function(){
-    $(document.documentElement).animate({scrollTop:0}, "300");
-});
 
 $(".toTop").on("click", function(){
     $(document.documentElement).animate({scrollTop:0}, "300");
 });
 
+
+$(".navSummary").on("click", function(){
+    $(document.documentElement).animate({scrollTop:$(".sectionSummary").offset().top}, "300");
+});
+
 $(".navSkills").on("click", function(){
-    $(document.documentElement).animate({scrollTop:741}, "300");
+    $(document.documentElement).animate({scrollTop:$(".sectionNameSkills").offset().top -50}, "300");
 });
 
 $(".navWorks").on("click", function(){
-    $(document.documentElement).animate({scrollTop:1561}, "300");
+    $(document.documentElement).animate({scrollTop:$(".sectionNameWorks").offset().top -60}, "300");
 });
 
 $(".navContact").on("click", function(){
-    $(document.documentElement).animate({scrollTop:3501}, "300");
+    $(document.documentElement).animate({scrollTop:$(".sectionNameFooter").offset().top -60}, "300");
 });

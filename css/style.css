@@ -106,10 +106,7 @@ p {
 }
 
 
-
-.summary {
-    position: relative;
-    top: 50px;
+.summary {    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:         
@@ -202,7 +199,7 @@ button {
 footer {
     width:80%;
     padding:5% 10% 5% 10%;    
-    margin:20px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
     background-color:#FACCC9;    
 }
 
@@ -253,8 +250,14 @@ footer {
 
 section {
     width:80%;
-    padding:4% 10% 4% 10%;    
-    margin:20px 0px 0px 0px;
+    padding:5% 10% 4% 10%;    
+    margin:0px 0px 20px 0px;
+}
+
+.sectionSummary {
+    position: relative;
+    top: 30px;
+    padding:5% 10% 8% 10%;
 }
 
 .sectionSkills {
@@ -262,7 +265,9 @@ section {
 }
 
 .sectionWorks {
-    background-color: #FCE7B1;
+    width: 100%  !important;
+    padding: 5% 0 4% 0 !important;
+    background-color: #CFE9F2;
 }
 
 .skills {
@@ -278,18 +283,19 @@ section {
     justify-content: center;    
 }
 
-.sectionHeader {    
+.sectionHeader {
+    width:100%;    
     display: flex;
     justify-content: center;
-    padding: 0% 0% 4% 0%;
+    margin: 0% 0% 0% 0%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));    
 }
 
 
 .sectionName {    
     color:white;
-    border-radius: 50px;
-    width:60%; 
+    border-radius: 0px;
+    width:100%; 
     height:100%;    
     text-align: center;
     align-items: center;    
@@ -300,7 +306,7 @@ section {
 }
 
 .sectionNameWorks {
-    background-color: #F8CF63;
+    background-color: #3BA4C5;
 }
 
 .skills_detail {    
@@ -317,15 +323,20 @@ section {
     border-radius:10px;
 }
 
+.project1 {
+    display:flex;
+    justify-content: flex-end;
+}
 
 .projectCard {
-    width:88%;
+    width:78%;
     border-radius: 20px;
     padding: 4% 6% 4% 6%;
     margin: 0px 0px 20px 0px; 
 }
 
-.project1 {    
+.project1Content {
+    align-self: flex-end;    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 3fr 1.5fr;
@@ -335,7 +346,7 @@ section {
         "projectNotes projectButton"
         ;
     grid-column-gap: 40px;
-    background-color: #A4D1C0;
+    background-image: url("../images/Cardp1b.png");
 
 }
 
@@ -380,14 +391,14 @@ img {
 .buttonP1 {
     white-space: nowrap;
     display: block;
-    background-color:#49A380;
+    background-color:#3BA4C5;
 }
 
 .buttonP2 {
-    background-color:#7872B8;
+    background-color:#3BA4C5;
 }
 
-.project2 {    
+.project2Content {    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 3fr 1.5fr;
@@ -397,12 +408,42 @@ img {
         "projectButton projectNotes"
         ;
     grid-column-gap: 40px;
-    background-color: #BCB9DC;
+    background-image: url("../images/Cardp2b.png");
 }
 
 
 
 @media only screen and (max-width: 600px) {
+
+    .navTextBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:50%;
+        height:90%;
+        border-width: 0 0 1vw 0;
+        border-color: #3BA4C5; 
+    }
+    
+    .navText {
+        font-weight: 400;
+        font-size: 4vw;
+        line-height: 100%;    
+        text-align: center;    
+    }
+
+    .navSummary {
+        border-style: solid;
+    }
+
+    .navSkills {
+        display: none;
+    }
+
+    .navContact {
+        display: none;
+    }
+
 
     .summary {
         display: grid;
@@ -432,7 +473,7 @@ img {
         flex-direction:column;
     }
 
-    .project1 {    
+    .project1Content {    
         display: grid;
         grid-template-columns:none;
         grid-template-rows: 0.5fr 2fr 1fr 0.5fr 0.5fr;
@@ -445,7 +486,7 @@ img {
             ;
     }
 
-    .project2 {    
+    .project2Content {    
         display: grid;
         grid-template-columns:none;
         grid-template-rows: 0.5fr 2fr 1fr 0.5fr 0.5fr;;
@@ -459,15 +500,14 @@ img {
     }
 
     .projectImg {
-        align-self: center;
         grid-area: projectImg;
     }
 
    
     .sectionName {    
         color:white;
-        border-radius: 50px;
-        width:80%; 
+        border-radius: 0px;
+        width:100%; 
         height:100%;    
         text-align: center;
         align-items: center;    
