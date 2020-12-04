@@ -324,19 +324,80 @@ section {
 }
 
 .project1 {
-    display:flex;
-    justify-content: flex-end;
+    perspective: 600px;    
+    padding: 0 0 0 5%;
+    margin: 0 0 2% 0;
+}
+
+.project2 {
+    perspective: 600px;    
+    padding: 0 5% 0 0;
+    margin: 2% 0 2% 0;
+}
+.card1 {    
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card2 {    
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
 }
 
 .projectCard {
-    width:78%;
+    width:88%;
     border-radius: 20px;
-    padding: 4% 6% 4% 6%;
-    margin: 0px 0px 20px 0px; 
+    padding: 0% 6% 0% 6%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card1.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card2.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.project1Front {
+    align-self: flex-end;
+    background-image: url("../images/Cardp1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project2Front {
+    height:100%;
+    align-self: flex-start;
+    background-image: url("../images/Cardp2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.project1FrontTitle {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project2FrontTitle {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.projectCardTitle {
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.02em;
+    font-weight: 450;
+    word-break: break-word;
+    color: white;
 }
 
 .project1Content {
-    align-self: flex-end;    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 3fr 1.5fr;
@@ -347,7 +408,9 @@ section {
         ;
     grid-column-gap: 40px;
     background-image: url("../images/Cardp1b.png");
-
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
 }
 
 .projectName {
@@ -409,6 +472,10 @@ img {
         ;
     grid-column-gap: 40px;
     background-image: url("../images/Cardp2b.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotateY(180deg);
+
 }
 
 

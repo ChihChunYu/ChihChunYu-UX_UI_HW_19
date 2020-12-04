@@ -82,3 +82,36 @@ $(".navWorks").on("click", function(){
 $(".navContact").on("click", function(){
     $(document.documentElement).animate({scrollTop:$(".sectionNameFooter").offset().top -60}, "300");
 });
+
+
+
+
+var divHeight = $(".project1Content").height(); 
+$('.project1Front').css('min-height', divHeight+'px');
+
+var divHeight = $(".project1Content").height(); 
+$('.project1').css('min-height', divHeight+'px');
+
+
+var divHeight = $('.project2Content').height(); 
+$('.project2Front').css('min-height', divHeight+'px');
+
+var divHeight = $('.project2Content').height(); 
+$('.project2').css('min-height', divHeight+'px');
+
+
+
+
+
+
+var card1 = document.querySelector(".card1");
+
+card1.addEventListener("click", function() {
+  card1.classList.toggle("is-flipped");
+});
+
+var card2 = document.querySelector(".card2");
+
+card2.addEventListener("click", function() {
+  card2.classList.toggle("is-flipped");
+});
